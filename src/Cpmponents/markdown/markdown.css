@@ -1,0 +1,18 @@
+.markdown-container {
+  width: 80vw;
+  margin: 2rem auto;
+  border: dotted #ddd;
+}
+
+.markdown-body {
+  padding: 1.5rem;
+  blockquote {
+    background-color: #fef08a;
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-color: #eab308;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 4px;
+  }
+}
