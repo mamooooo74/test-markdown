@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import "github-markdown-css/github-markdown.css";
 
 import { markdownStyle } from "./parts/MarkdownStyle";
+import rehypeRaw from "rehype-raw";
 type props = {
   markdown: string;
 };
@@ -16,6 +17,7 @@ const MarkDown: React.FC<props> = ({ markdown }) => {
       <ReactMarkdown
         className={`markdown-body ${styles.markdown}`}
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={markdownStyle}
       >
         {content}
