@@ -32,6 +32,27 @@ const Pre = ({
   );
 };
 
+const Blockquote = ({
+  children,
+}: ClassAttributes<HTMLElement> & HTMLAttributes<HTMLElement> & ExtraProps) => {
+  return (
+    <blockquote
+      style={{
+        backgroundColor: "#fef08a",
+        borderLeftWidth: "8px",
+        borderLeftStyle: "solid",
+        borderColor: "#eab308",
+        padding: "16px",
+        margin: "8px",
+        borderRadius: "4px",
+      }}
+    >
+      {children}
+    </blockquote>
+  );
+};
+
 export const markdownStyle: Components = {
   pre: Pre,
+  blockquote: Blockquote,
 };
