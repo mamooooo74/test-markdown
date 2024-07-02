@@ -6,6 +6,7 @@
 
 .markdown-body {
   padding: 1.5rem;
+
   blockquote {
     background-color: #fef08a;
     border-left-width: 8px;
@@ -13,6 +14,27 @@
     border-color: #eab308;
     padding: 16px;
     margin: 8px;
+    line-height: 24px;
     border-radius: 4px;
+  }
+  table {
+    display: table;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  th,
+  td {
+    border: none !important;
+    padding: 0.6rem;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  tr {
+    background-color: #fefefe !important;
   }
 }
